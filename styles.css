@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(44, 41, 41);
+    background-image: url("background.svg"); 
+}
+
+.calculator{
+    border: 2px solid blanchedalmond;
+    height: 590px;
+    width: 500px;
+    padding: 10px;
+    margin-left: 400px;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: rgb(135, 135, 153);
+}
+
+.screen{
+    border: 2px solid grey;
+    height: 130px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.p1{
+    height: 70px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.grid{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 33.4929px;
+  padding: .8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  word-break: break-word;
+  border: 0;
+}
+
+button:active,
+button:focus {
+  border-bottom-style: none;
+  border-color: #dadada;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+  outline: 0;
+}
+
+button:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
+}
+
+.clear{
+    background-color: rgb(157, 157, 204);
+}
+
+.delete{
+    background-color: rgb(199, 137, 137);
+}
+
+.multiply, .divide, .minus, .plus{
+    background-color: rgb(83, 192, 125);
+}
+
+.point, .equal{
+    background-color: rgb(209, 145, 67);
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eigth, .nine, .zero{
+    color: black;
+    background-color: rgb(202, 202, 194);
+}
